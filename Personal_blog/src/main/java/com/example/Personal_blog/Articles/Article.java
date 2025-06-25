@@ -1,5 +1,6 @@
 package com.example.Personal_blog.Articles;
 
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -15,6 +16,17 @@ public class Article {
     private int articleYear;
     private ArrayList<String> articleTags;
     private String articleContent;
+
+
+    public Article() {
+    }
+
+    public Article(String articleAuthor, int articleYear, ArrayList<String> articleTags, String articleContent){
+        this.articleAuthor = articleAuthor;
+        this.articleYear = articleYear;
+        this.articleTags = articleTags;
+        this.articleContent = articleContent;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -39,12 +51,7 @@ public class Article {
         return Objects.hashCode(id);
     }
 
-    public Article(String articleAuthor, int articleYear, ArrayList<String> articleTags, String articleContent){
-        this.articleAuthor = articleAuthor;
-        this.articleYear = articleYear;
-        this.articleTags = articleTags;
-        this.articleContent = articleContent;
-    }
+
 
     public String getArticleContent() {
         return articleContent;
@@ -54,7 +61,7 @@ public class Article {
         this.articleContent = articleContent;
     }
 
-    public double getArticleId() {
+    public long getArticleId() {
         return id;
     }
 

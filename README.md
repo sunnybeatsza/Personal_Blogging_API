@@ -1,7 +1,8 @@
 # RESTful API for a Personal Blog
 
-This is a RESTful API that would power a personal blog. This implies that you’d have to create a backend API with the following responsibilities:
-
+This is a RESTful API that would power a personal blog. 
+The following are the features that are implemented. 
+The articles will be stored a file for now as this is a small scale project.
 - Return a list of articles. You can add filters such as publishing date, or tags.
 - Return a single article, specified by the ID of the article.
 - Create a new article to be published.

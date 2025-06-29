@@ -37,10 +37,10 @@ Articles are stored in a **local file** for now, making it lightweight and ideal
 | Method | Endpoint         | Description          |
 | ------ | ---------------- | -------------------- |
 | GET    | `/get_all_articles`      | Get all articles     |
-| GET    | `get_article_by_id/{id}}` | Get article by ID    |
+| GET    | `/get_article_by_id/{id}}` | Get article by ID    |
 | POST   | `/create_article`      | Create a new article |
 | PUT    | `/update_article/{id}` | Update article by ID |
-| DELETE | `delete_article/{id}` | Delete article by ID |
+| DELETE | `/delete_article/{id}` | Delete article by ID |
 
 ## Technologies Used
 - Java 21

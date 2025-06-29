@@ -36,11 +36,11 @@ Articles are stored in a **local file** for now, making it lightweight and ideal
 ## Endpoints
 | Method | Endpoint         | Description          |
 | ------ | ---------------- | -------------------- |
-| GET    | `/articles`      | Get all articles     |
-| GET    | `/articles/{id}` | Get article by ID    |
-| POST   | `/articles`      | Create a new article |
-| PUT    | `/articles/{id}` | Update article by ID |
-| DELETE | `/articles/{id}` | Delete article by ID |
+| GET    | `/get_all_articles`      | Get all articles     |
+| GET    | `get_article_by_id/{id}}` | Get article by ID    |
+| POST   | `/create_article`      | Create a new article |
+| PUT    | `/update_article/{id}` | Update article by ID |
+| DELETE | `delete_article/{id}` | Delete article by ID |
 
 ## Technologies Used
 - Java 21
